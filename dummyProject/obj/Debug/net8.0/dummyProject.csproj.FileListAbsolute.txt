@@ -1,0 +1,14 @@
+/root/project/sonarQube-Bot/dummyProject/bin/Debug/net8.0/dummyProject
+/root/project/sonarQube-Bot/dummyProject/bin/Debug/net8.0/dummyProject.deps.json
+/root/project/sonarQube-Bot/dummyProject/bin/Debug/net8.0/dummyProject.runtimeconfig.json
+/root/project/sonarQube-Bot/dummyProject/bin/Debug/net8.0/dummyProject.dll
+/root/project/sonarQube-Bot/dummyProject/bin/Debug/net8.0/dummyProject.pdb
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/dummyProject.GeneratedMSBuildEditorConfig.editorconfig
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/dummyProject.AssemblyInfoInputs.cache
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/dummyProject.AssemblyInfo.cs
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/dummyProject.csproj.CoreCompileInputs.cache
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/dummyProject.dll
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/refint/dummyProject.dll
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/dummyProject.pdb
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/dummyProject.genruntimeconfig.cache
+/root/project/sonarQube-Bot/dummyProject/obj/Debug/net8.0/ref/dummyProject.dll
