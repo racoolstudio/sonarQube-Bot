@@ -4,8 +4,10 @@ pipeline{
 		stage("Building"){
 			steps{
 				echo "Building"
-    				sh "ls" 
-			}
+    				sh "ls"
+                                sh "cd dummyProject" 
+				sh "ls"			
+}
 			
 			}
 		
