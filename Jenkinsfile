@@ -7,10 +7,22 @@ pipeline{
     				sh "ls"
                                 sh "dotnet build ./dummyProject/dummyProject.csproj"
 					
-}
+			}
 			
 			}
 		
 		}
+	 post {
+	        success {
+	            script {
+	                githubNotify status: 'SUCCESS', description: 'Build succeeded', context: 'ci/jenkins'
+	            }
+	        }
+	        failure {
+	            script {
+	                githubNotify status: 'FAILURE', description: 'Build failed', context: 'ci/jenkins'
+	            }
+	        }
+    	}				
 	
 }
