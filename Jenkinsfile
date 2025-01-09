@@ -9,7 +9,7 @@ pipeline{
 			steps{
 				echo "Building"
     				sh "ls"
-				  withSonarQubeEnv('SonarScanner'){
+				  withSonarQubeEnv('SonarMaster'){
 						sh """
 						dotnet-sonarscanner begin /k:"DummyProject_$BRANCH_NAME" /d:sonar.host.url="http://172.105.20.48/" /d:sonar.token="$SONAR_TOKEN" /d:sonar.scanner.scanAll="True" 
 
