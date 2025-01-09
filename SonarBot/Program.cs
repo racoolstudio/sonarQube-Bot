@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
 
 var app = builder.Build();
-
+var Password = "2i39heh9c1lwe";
+var fw;
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
