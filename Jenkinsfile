@@ -5,7 +5,7 @@ pipeline{
 
 	}
 	stages{
-		stage("Building"){
+		stage("Building and SonarQube"){
 			steps{
 				echo "Building"
     				sh "ls"
