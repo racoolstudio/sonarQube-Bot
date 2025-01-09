@@ -12,17 +12,6 @@ pipeline{
 			}
 		
 		}
-	 post {
-	        success {
-	            script {
-	                githubNotify status: 'SUCCESS', description: 'Build succeeded', context: 'ci/jenkins',  credentialsId: 'pas-git'
-	            }
-	        }
-	        failure {
-	            script {
-	                githubNotify status: 'FAILURE', description: 'Build failed', context: 'ci/jenkins'
-	            }
-	        }
-    	}				
+		
 	
 }
