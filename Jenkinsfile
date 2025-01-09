@@ -5,12 +5,13 @@ pipeline{
 			steps{
 				echo "Building"
     				sh "ls"
-                                sh "cd './dummyProject'" 
-				sh "ls"			
-}
+                                sh "dotnet build ./dummyProject/dummyProject.csproj"
+					
+			}
 			
 			}
 		
 		}
+		
 	
 }
