@@ -1,2 +1,2 @@
-gwg# sonarQube-Bot
-yir
+# sonarQube-Bot
+
