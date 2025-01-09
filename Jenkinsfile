@@ -11,8 +11,8 @@ pipeline{
     				sh "ls"
 				  withSonarQubeEnv('SonarMaster'){
 						sh """
-                                                dotnet tool install --global dotnet-sonarscanner
-						export PATH="$PATH:$HOME/.dotnet/tools"
+      //                                           dotnet tool install --global dotnet-sonarscanner
+						// export PATH="$PATH:$HOME/.dotnet/tools"
 						dotnet-sonarscanner begin /k:"DummyProject_$BRANCH_NAME" /d:sonar.host.url="http://172.105.20.48/" /d:sonar.token="$SONAR_TOKEN" /d:sonar.scanner.scanAll="True" 
 						dotnet build ./dummyProject/dummyProject.csproj
 						dotnet-sonarscanner end /d:sonar.token="$SONAR_TOKEN"
