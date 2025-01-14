@@ -1,3 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 var password33="passworfdfe";
+var username="passworfdfe";
+var password="passworfdfe";
