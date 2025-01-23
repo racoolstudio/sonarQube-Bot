@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = dummyProject
-build_property.ProjectDir = /root/project/sonarQube-Bot/dummyProject/
+build_property.ProjectDir = D:\git\sonarQube-Bot\dummyProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Identity;
-
+using SonarBot.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-
+builder.Services.AddScoped<SonarBotService>();
+builder.Services.AddHttpClient();
+builder.Configuration
+    .AddJsonFile("appsettings.json")
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddEnvironmentVariables();
 var app = builder.Build();
-var Password = "2i39heh9c1lwe";
-var fw;
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
