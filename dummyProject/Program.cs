@@ -1,8 +1,11 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 var password33="passworfdfe";
 =======
+=======
+>>>>>>> Stashed changes
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -58,4 +61,7 @@ class Program
        
     }
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
