@@ -50,7 +50,7 @@ In the configuration file (e.g., `appsettings.json` or environment variables), s
   },
   "GitHub": {
     "Token": "YOUR_GITHUB_TOKEN",
-    "Server": "racoolstudio"
+    "Server": "your github username like racoolstudio"
   }
 }
 ```
