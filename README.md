@@ -93,4 +93,24 @@ Deploy the bot to your preferred hosting platform. You can use platforms such as
 
 When a new issue is found, the bot will create a comment like the following:
 
+```bash
+Your commit has 3 new issue(s)!
+1. Issue 1: [Click Here](https://your-sonarqube-server.com/code?id=your_project_key&selected=your_issue_key)
+2. Issue 2: [Click Here](https://your-sonarqube-server.com/code?id=your_project_key&selected=your_issue_key)
+3. Issue 3: [Click Here](https://your-sonarqube-server.com/code?id=your_project_key&selected=your_issue_key)
+```
+
+---
+
+## Troubleshooting
+
+### 1. **Webhooks Not Triggering**: 
+   - Ensure that the webhook is properly configured and that the correct events (e.g., `check`, `push`, `status`) are selected.
+
+### 2. **SonarQube Issues Not Showing**: 
+   - Make sure that SonarQube analysis is correctly set up and that the token used in the bot has the correct permissions to access the SonarQube API.
+
+### 3. **GitHub Permissions**: 
+   - Ensure the GitHub token has the necessary permissions to post comments on pull requests.
+
 
