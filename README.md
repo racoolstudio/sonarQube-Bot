@@ -54,3 +54,43 @@ In the configuration file (e.g., `appsettings.json` or environment variables), s
   }
 }
 ```
+## Step 4: Deploy SonarQube-Bot
+
+Deploy the bot to your preferred hosting platform. You can use platforms such as **Azure**, **AWS**, or your own server.
+
+---
+
+## How It Works
+
+1. **SonarQube Analysis**: Jenkins triggers a SonarQube analysis for your code.
+2. **Webhook Notification**: Once the analysis is complete, a webhook payload is sent to the bot's endpoint.
+3. **Bot Fetches Pull Request Details**: The bot fetches details about the pull request, such as the PR number and the associated repository.
+4. **Fetching Issues**: The bot then checks SonarQube for issues related to the current commit.
+5. **Create GitHub Comment**: Based on the analysis results, the bot creates a comment on the pull request with a summary of the new issues identified.
+
+---
+
+## Key Actions
+
+### 1. **Check Check Suite Status on GitHub**
+
+- Once the webhook is triggered, navigate to the **Checks** section of your pull request on GitHub.
+- Ensure the **SonarQube-Bot** status check appears. This shows whether the SonarQube analysis has passed or failed.
+
+### 2. **SonarQube Issues in PR**
+
+- The bot will generate comments in the pull request for each new issue discovered in the commit.
+- Issues are categorized and linked directly to SonarQube so that developers can easily click on them to get more details.
+
+### 3. **Click on Check Suite and Status**
+
+- Click on the **Check Suite** to get detailed information about the SonarQube analysis.
+- Review the issues that are highlighted for the commit and address them accordingly.
+
+---
+
+## Example Response
+
+When a new issue is found, the bot will create a comment like the following:
+
+
